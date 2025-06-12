@@ -803,7 +803,7 @@ $(document).ready(function() {
    
    // Rese per linea di trasformazione
    const yieldsPerLine = {
-       'BOE/1100': { prima: 31.30, seconda: 5.0, torchiato: 6.0 },
+       'BOE/1100': { prima: 33, seconda: 5.0, torchiato: 6.0 },
        'GOE EST/400': { prima: 31.60, seconda: 0, torchiato: 6.0 },
        '400': { prima: 32.00, seconda: 0, torchiato: 6.0 },
        'GOE EST/POLY': { prima: 30.60, seconda: 0, torchiato: 6.0 },
@@ -1057,6 +1057,7 @@ $(document).ready(function() {
                            <option value="BIO NTD">BIO NTD</option>
                            <option value="BIO DEM/NTD">BIO DEM/NTD</option>
                            <option value="TRACCIATO">TRACCIATO</option>
+                           <option value="BIO IGP">BIO IGP</option>
                            <option value="IGP">IGP</option>
                            <option value="CONVENZIONALE">CONVENZIONALE</option>
                            <option value="ALTRO">ALTRO</option>
@@ -1081,6 +1082,7 @@ $(document).ready(function() {
                        <select class="linea" onchange="updateYield(${cardIndex}); calculateSupplier(${cardIndex}); updateBioStyle(${cardIndex})">
                            <option value="">Seleziona linea</option>
                            <option value="GOE EST/400">GOE EST/400</option>
+                           <option value="400">400</option>
                            <option value="BOE/1100">BOE/1100</option>
                            <option value="GOE EST/POLY">GOE EST/POLY</option>
                            <option value="GOE INT/POLY">GOE INT/POLY</option>
